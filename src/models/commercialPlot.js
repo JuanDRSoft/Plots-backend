@@ -9,6 +9,10 @@ const CommercialPlotSchema = mongoose.Schema({
   plotType: String,
   extraLand: String,
   mainDoubleRoad: String,
+  filling: String,
+  streetNo: String,
+  status: String,
+  marlas: String,
 });
 
 const CommercialPlot = mongoose.model('CommercialPlot', CommercialPlotSchema);
