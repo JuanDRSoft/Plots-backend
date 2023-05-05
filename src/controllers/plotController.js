@@ -38,7 +38,16 @@ const editPlot = async (req, res) => {
     return res.status(404).json({ msg: error.message });
   }
 
-  admin = req.body || admin;
+  admin.plotNo = req.plotNo || admin.plotNo;
+  admin.block = req.block || admin.block;
+  admin.size = req.size || admin.size;
+  admin.status = req.status || admin.status;
+  admin.corner = req.corner || admin.corner;
+  admin.extraLand = req.extraLand || admin.extraLand;
+  admin.marlas = req.marlas || admin.marlas;
+  admin.mainDoubleRoad = req.mainDoubleRoad || admin.mainDoubleRoad;
+  admin.filling = req.filling || admin.filling;
+  admin.streetNo = req.streetNo || admin.streetNo;
 
   try {
     const adminAlmacenado = await admin.save();
