@@ -15,5 +15,5 @@ const CommercialPlotSchema = mongoose.Schema({
   marlas: String,
 });
 
-const CommercialPlot = mongoose.model('CommercialPlot', CommercialPlotSchema);
+const CommercialPlot = mongoose.model('commercialplots', CommercialPlotSchema);
 module.exports = CommercialPlot;

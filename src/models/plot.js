@@ -13,5 +13,5 @@ const PlotSchema = mongoose.Schema({
   streetNo: String,
 });
 
-const Plot = mongoose.model('Plot', PlotSchema);
+const Plot = mongoose.model('plots', PlotSchema);
 module.exports = Plot;
